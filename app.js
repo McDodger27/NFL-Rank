@@ -35,3 +35,14 @@ const teams = [
 
 let nfc = teams.filter(team => team.conference === 'NFC');
 let afc = teams.filter(team => team.conference === 'AFC');
+
+const option1 = document.querySelector('.option1');
+const option2 = document.querySelector('.option2'); 
+const results = document.querySelector('.results');
+const nfcResults = document.querySelectorAll('.nfc li'); 
+const afcResults = document.querySelectorAll('.afc li'); 
+const favResult = document.querySelector('h3');
+const h1 = document.querySelector('.header');
+const lock = document.querySelector('.lock');
+const h2 = document.querySelector('h2');
+const favLogo = document.querySelector('.fav');
