@@ -1,0 +1,74 @@
+.rank{
+    margin: 100px;
+    text-align: center;
+}
+label{
+    margin: 50px;
+    cursor: pointer;
+}
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.results{
+    text-align: center;
+    opacity: 0.95;
+    font-size: 2em;
+    border-radius: 2em;
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: lightgray;
+}
+.nfc{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 100px;
+    background-color: black;
+    color: lightgray;
+    padding: 7px;
+    border-radius: 1em;
+} 
+.afc{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 100px;
+    background-color: black;
+    color: lightgray;
+    padding: 7px;
+    border-radius: 1em;
+}
+.header{
+    text-align: center;
+    background-color: lightgray;
+    opacity: 0.95;
+    padding: 10px;
+    border-radius: 2em;
+    min-width: 200px;
+    max-width: 300px;
+    margin: auto;
+}
+.lock{
+    font-size: 80%;
+    border-color: lightgray;
+    background-color: black;
+    color: lightgray;
+    border-radius: 13px;
+    cursor: pointer;
+    box-shadow: 10px;
+}
+.reload{
+    font-size: 80%;
+    border-color: lightgray;
+    background-color: black;
+    color: lightgray;
+    border-radius: 13px;
+    cursor: pointer;
+    box-shadow: 10px;
+    margin: 10px;
+}
+.fav{
+    margin-top: 20px;
+}
