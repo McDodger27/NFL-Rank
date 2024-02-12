@@ -81,3 +81,39 @@ const ranks = function () {
         count2++;
     });
 }
+while (team1 === team2){
+    generate();
+}
+display();
+option1.addEventListener('click', e => {
+    team1.wins += team2.wins;
+    generate();
+    ranks();
+    while (team1 === team2){
+        generate();
+    }
+    display();
+    favorite();
+    results.style.backgroundImage = `linear-gradient(${fav.color1}, ${fav.color2})`;
+    h1.style.backgroundImage = `linear-gradient(${fav.color1}, ${fav.color2})`;
+}); 
+option2.addEventListener('click', e => {
+    team2.wins += team1.wins;
+    generate();
+    ranks();
+    while (team1 === team2){
+        generate();
+    }
+    display();
+    favorite();
+    results.style.backgroundImage = `linear-gradient(${fav.color1}, ${fav.color2})`;
+    h1.style.backgroundImage = `linear-gradient(${fav.color1}, ${fav.color2})`;
+});
+lock.addEventListener('click', () => {
+    results.innerHTML = `<h2>Congratulations!</h2>
+        <h3>Favorite Team: ${fav.place} ${fav.name}
+        <br><img class="fav" src="/leftHelmet/${fav.helmet}" alt="">
+        <br><br><button class="reload"onClick="window.location.reload();">Play Again</button>`;
+    option1.innerHTML = ``;
+    option2.innerHTML = ``;
+});
