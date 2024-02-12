@@ -51,3 +51,33 @@ let fav = teams[0];
 
 let team1 = teams[Math.floor(Math.random() * 32)];
 let team2 = teams[Math.floor(Math.random() * 32)];
+
+const generate = function () {
+    team1 = teams[Math.floor(Math.random() * 32)];
+    team2 = teams[Math.floor(Math.random() * 32)];
+}
+const display = function () {
+    option1.innerHTML = `<img src="leftHelmet/${team1.helmet}" alt="">`;
+    option2.innerHTML = `<img src="rightHelmet/${team2.helmet}" alt="">`;
+}
+const favorite = () => {
+    teams.sort((a,b) => b.wins - a.wins); 
+    fav = teams[0];
+    favResult.innerHTML = `Favorite Team: ${fav.place} ${fav.name}`;
+}
+
+
+const ranks = function () {
+    let count1 = 0;
+    let count2 = 0;
+    nfc.sort((a,b) => b.wins - a.wins);
+    afc.sort((a,b) => b.wins - a.wins);
+    nfc.forEach(team => {
+        nfcResults[count1].innerHTML = team.place + ' ' + team.name + ' ' + team.wins;
+        count1++;
+    });
+    afc.forEach(team => {
+        afcResults[count2].innerHTML = team.place + ' ' + team.name + ' ' + team.wins;
+        count2++;
+    });
+}
