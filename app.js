@@ -46,3 +46,8 @@ const h1 = document.querySelector('.header');
 const lock = document.querySelector('.lock');
 const h2 = document.querySelector('h2');
 const favLogo = document.querySelector('.fav');
+
+let fav = teams[0];
+
+let team1 = teams[Math.floor(Math.random() * 32)];
+let team2 = teams[Math.floor(Math.random() * 32)];
