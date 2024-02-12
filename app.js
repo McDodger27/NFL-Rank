@@ -32,3 +32,6 @@ const teams = [
     {name: 'Titans', place: 'Tennessee', conference: 'AFC', wins: 1, helmet: 'titans.png', color1: 'rgb(73, 184, 253)', color2: 'rgb(20, 12, 87)'},
     {name: 'Commanders', place: 'Washington', conference: 'NFC', wins: 1, helmet: 'commanders.png', color1: 'maroon', color2: 'rgb(250, 189, 5)'}
 ];
+
+let nfc = teams.filter(team => team.conference === 'NFC');
+let afc = teams.filter(team => team.conference === 'AFC');
