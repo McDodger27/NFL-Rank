@@ -30,6 +30,7 @@ body{
     color: lightgray;
     padding: 7px;
     border-radius: 1em;
+    min-width: 350px;
 } 
 .afc{
     display: inline-block;
@@ -39,7 +40,8 @@ body{
     color: lightgray;
     padding: 7px;
     border-radius: 1em;
-}
+    min-width: 350px;
+} 
 .header{
     text-align: center;
     background-color: lightgray;
